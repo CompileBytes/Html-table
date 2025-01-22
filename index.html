@@ -1,0 +1,113 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Advanced HTML Table Example</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             background-color: #f4f4f9;
+             margin: 0;
+             padding: 20px;
+         }
+         table {
+             width: 90%;
+             margin: 20px auto;
+             border-collapse: collapse;
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         }
+         th, td {
+             padding: 15px;
+             text-align: center;
+             border: 1px solid #ddd;
+         }
+         th {
+             background-color: #4CAF50;
+             color: white;
+             font-size: 18px;
+         }
+         tr:nth-child(even) {
+             background-color: #f9f9f9;
+         }
+         tr:hover {
+             background-color: #f1f1f1;
+         }
+         caption {
+             font-size: 24px;
+             font-weight: bold;
+             margin-bottom: 15px;
+         }
+         .highlight {
+             color: #ff5733;
+         }
+         .merged-cell {
+             background-color: #ffeb3b;
+         }
+         .footer {
+             background-color: #4CAF50;
+             color: white;
+             font-weight: bold;
+         }
+     </style>
+ </head>
+ <body>
+
+     <table>
+         <caption>Project Team Overview</caption>
+         <thead>
+             <tr>
+                 <th rowspan="2">Employee ID</th>
+                 <th rowspan="2">Employee Name</th>
+                 <th colspan="3">Roles</th>
+                 <th rowspan="2">Department</th>
+                 <th rowspan="2">Salary</th>
+             </tr>
+             <tr>
+                 <th>Primary Role</th>
+                 <th>Secondary Role</th>
+                 <th>Support Role</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>101</td>
+                 <td>John Doe</td>
+                 <td>Software Engineer</td>
+                 <td>Lead Developer</td>
+                 <td>Code Reviewer</td>
+                 <td>IT</td>
+                 <td class="highlight">$95,000</td>
+             </tr>
+             <tr>
+                 <td>102</td>
+                 <td>Jane Smith</td>
+                 <td>Product Manager</td>
+                 <td>Team Lead</td>
+                 <td>UX Designer</td>
+                 <td>Marketing</td>
+                 <td>$90,000</td>
+             </tr>
+             <tr>
+                 <td>103</td>
+                 <td>Michael Wilson</td>
+                 <td>UX Designer</td>
+                 <td>UI Designer</td>
+                 <td>Researcher</td>
+                 <td>Design</td>
+                 <td>$78,000</td>
+             </tr>
+             <tr>
+                 <td colspan="6" class="merged-cell">Project Overview: This is a team of highly skilled individuals working towards building a new product.</td>
+             </tr>
+         </tbody>
+         <tfoot>
+             <tr class="footer">
+                 <td colspan="7">Total Project Team Salary</td>
+             </tr>
+         </tfoot>
+     </table>
+
+ </body>
+ </html>
